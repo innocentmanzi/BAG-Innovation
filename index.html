@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> To-DO List App </title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="todo-app">
+                <h2>
+                    TO-DO List 
+                    <img src="to-do list.png" alt="todo list images">
+                </h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <input type="text" id="category-input" placeholder="Category">
+                    <button class="add" onclick="addTask()">Add</button>
+                </div>
+
+                <select id="category-filter" onchange="filterTasksByCategory()">
+                    <option value="all">All Categories</option>
+                </select>
+
+                <ul id="taskList" class="task-list"></ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="scripts.js"> </script>
+    </body>
+
+</html>
